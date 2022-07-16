@@ -107,8 +107,8 @@ main{
 }
 .hero-section{
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    column-gap: 6%;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4%;
     /* row-gap: 5rem; */
     grid-template-areas: "txt img"
                           "client img";
