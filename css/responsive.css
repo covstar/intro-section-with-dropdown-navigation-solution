@@ -1,0 +1,187 @@
+/* media queries */
+/* mobile screen */
+@media (max-width:720px){
+    header{
+        padding: 2rem;
+    }
+    /* navbar section */
+    nav {
+        display: block;
+    }
+    .desktop-nav{
+        display: none;
+    }
+    .desktop-btn{
+        display: none;
+    }
+    body{
+        position: relative;
+    }
+    .mobile-nav {
+        /* display: block; */
+        background-color: white;
+        box-shadow: 0px 0px 35px hsla(0, 0%, 42%, 0.367);
+        height: 100%;
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 19rem;
+        padding: 4rem 2rem 0;
+    }
+    .overlay{
+        height: 100%;
+        background-color: hsla(0, 0%, 8%, 0.578);
+        width: 30rem;
+        position: absolute;
+        left: 0;
+        display: none;
+    }
+    .list-items {
+        display: block;
+        
+    }
+    .feature,
+    .company,
+    .about,
+    .career {
+        padding: .7rem 0;
+        position: relative;
+    }
+    .feature-dropdown,
+    .company-dropdown {
+        /* display: block; */
+        background-color: unset;
+        padding: 1.5rem 1.5rem 1rem;
+        box-shadow: none;
+        top: unset;
+        position: static;
+    }
+    .menu, .close{
+        /* display: block; */
+        visibility: visible;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        cursor: pointer;
+    }
+    .menu{
+        display: block;
+    }
+    .mobile-btn{
+        padding: 2rem 0;
+    }
+    .mobile-btn .login{
+        display: block;
+        margin: 0 auto .8rem;
+        border: none;
+        color: hsl(0, 0%, 41%);
+        background: none;
+        cursor: pointer;
+        font-size: .9rem;
+    }
+    .mobile-btn .register {
+        margin: 0 auto;
+        cursor: pointer;
+        color: hsl(0, 0%, 41%);
+       border: 2px solid hsl(0, 0%, 8%);
+        font-size: .9rem;
+        padding: .7rem;
+        background: none;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .login:hover,
+    .register:hover {
+        color: hsl(0, 0%, 8%);
+        font-weight: 700;
+    }
+    /* main section */
+    main {
+        padding: 0rem 0 4rem;
+    }
+
+    .mobile-hero {
+        display: block;
+    }
+    .mobile-hero img{
+        width: 100%;
+    }
+    .hero-img {
+        display: none;
+    }
+    .hero-section{
+        display: block;
+        padding: 0 1rem ;
+        text-align: center;
+    }.text-area{
+        padding: 3rem 0  5rem;
+    }
+    h1{
+        font-size: 2.8rem;
+    }
+    p{
+        padding: 1rem 0 3rem;
+        font-weight: 500;
+    }
+   
+    .clients img {
+        padding: 0 .5rem 0 0;
+    }
+}
+
+
+
+/* tablet screen */
+@media (min-width:1210px) and (max-width: 1390px){
+    /* main section */
+    main {
+        padding: 2rem 6% 4rem;
+    }
+}
+
+
+@media (min-width:1080px) and (max-width: 1209px) {
+
+    /* main section */
+    main {
+        padding: 2rem 6% 4rem;
+    }
+    h1{
+        font-size: 4.4rem;
+    }
+    .text-area{
+        padding-bottom: 5rem;
+    }
+}
+
+@media (min-width:721px) and (max-width: 1079px){
+    .logo {
+        padding-right: 2rem;
+    }
+    /* main section */
+    main {
+        padding: 2rem 6% 4rem;
+    }
+    .feature a, .company a, .about a, .career a{
+        font-size: .9rem;
+    }
+    .desktop-btn .login,
+    .desktop-btn .register {
+        padding: .8rem 1rem;
+        font-size: .9rem;
+    }
+    .hero-section {
+        grid-template-areas: "txt img"
+            "client client";
+    }
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        padding-right: 0;
+    }
+    .clients{
+        text-align: center;
+    }
+}

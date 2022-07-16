@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Epilogue";
+}
+
+li{
+    list-style: none;
+}
+header{
+    padding: 3rem ;
+}
+/* navbar section */
+nav{
+    display: flex;
+}
+.mobile-nav{
+    display: none;
+    visibility: hidden;
+}
+.logo{
+    padding-right: 4rem;
+}
+.list-items {
+    display: flex;
+}
+.feature, .company, .about, .career{
+    padding: 0 1.5rem;
+    position: relative;
+}
+.feature img, .company img{
+    padding-left: .3rem;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.feature a, .company a, .about a, .career a{
+    color: hsl(0, 0%, 41%);
+}
+
+.feature-dropdown, .company-dropdown{
+    display: none;
+    background-color: hsl(0, 0%, 98%);
+    padding: 1.5rem;
+    box-shadow: 0px 0px 25px hsla(0, 0%, 42%, 0.233);
+    top: 2rem;
+    width: auto;
+    position: absolute;
+    border-radius: 5px;
+}
+.list-items a{
+    text-decoration: none;
+}
+.list-items a:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+}
+.feature-dropdown{
+    left: -2rem;
+}
+.feature-dropdown li img{
+    padding: 0 .4rem;
+}
+.feature-dropdown li, .company-dropdown li{
+    padding: .5rem 0;
+    font-size: .93rem;
+}
+.feature-dropdown li a,
+.company-dropdown li a{
+    color: hsl(0, 0%, 41%);
+}
+.menu, .close{
+    display: none;
+    visibility: hidden;
+}
+.desktop-btn{
+    margin-top: -.7rem;
+    margin-left: auto;
+}
+
+.desktop-btn .login, .desktop-btn .register{
+    padding: .8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.desktop-btn .login{
+    border: none;
+    background: none;
+}
+.login:hover, .register:hover{
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+}
+.desktop-btn .register{
+    border-radius: 10px;
+    background: none;
+    border: 1.6px solid;
+}
+
+/* main section */
+main{
+    padding: 2rem 12% 4rem;
+}
+.mobile-hero{
+    display: none;
+}
+.hero-section{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 6%;
+    /* row-gap: 5rem; */
+    grid-template-areas: "txt img"
+                          "client img";
+}
+.text-area{
+    grid-area: txt;
+    padding: 6rem 0rem 8rem 0;
+}
+h1{
+    font-size: 5rem;
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+}
+p{
+    padding: 3rem 7rem 3rem 0;
+    color: hsl(0, 0%, 41%);
+    line-height: 1.8;
+    font-weight: 500;
+}
+.text-area button{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 8%);
+}
+.text-area button:hover{
+    color: hsl(0, 0%, 8%);
+    background-color: white;
+    border: 1px solid;
+}
+.clients{
+    grid-area: client;
+}
+.clients img{
+    padding: 0 2rem 0 0;
+}
+.hero-img{
+    grid-area: img;
+}
+.hero-img img{
+    width: 100%;
+}
+
+/* footer section */
+footer{
+    text-align: center;
+    padding: 2rem;
+}
+footer a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+.attribution{
+    line-height: 1.5;
+}
+footer a:hover{
+    color: hsl(0, 0%, 8%);
+}
